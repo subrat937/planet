@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <link  href="{{ url_for('static', filename='../static/predict.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+   <link href="{{ url_for('static', filename='../static/index.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <body>
+        <!-- <nav>
+            <div>
+               <img src='../static/source.gif' alt='rocket'/>
+             </div>
+             <div><h1>Thanks to Alper Cakir for DataSet</h1></div>
+             <main>
+                <a href=''>Home</a>
+                <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS">DataSet</a>
+             </main>
+         </nav> -->
+        <div class="predicted">
+            <main>{{pred}}</main>
+            <!-- <img src="{{ url_for('static', filename='giphy.gif') }}" alt="burn-planet" /> -->
+
+        </div>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+.predicted>main{
+    display: inline-block;
+}
+.predicted{
+    height: 90%;
+    width: 100%;
+    text-align: center;
+    padding-top: 299px;
+    background-image:url("./giphy.gif");
+    background-size: cover;
+    background-position: center center;
+}
+main{
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #ff6500;
+    text-shadow: 3px 2px darkslateblue;
+    font-size: 50px;
+}

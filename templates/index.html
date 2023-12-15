@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>boss</title>
+  <link  href="{{ url_for('static', filename='../static/index.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link  href="{{ url_for('static', filename='../static/nav.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav>
+    <div>
+       <img src='../static/source.gif' alt='rocket'/>
+     </div>
+     <div><h1>Thanks to Alper Cakir for DataSet</h1></div>
+     <main>
+        <a href=''>Home</a>
+        <a href="https://exoplanetarchive.ipac.caltech.edu/cgi-bin/TblView/nph-tblView?app=ExoTbls&config=PS">DataSet</a>
+     </main>
+ </nav>
+
+
+
+    <div className='datasubmit'>
+        <main>
+            <h4>Example DataSet</h4>
+            <p><blockquote>EARTH</blockquote> 150,warm,Yes,5972.2,13.43185</p>
+        </main>
+        <main>
+          <h1>Enter data of your planet</h1>
+    
+          <form action='/predict' method="POST" >
+            <div>
+              <label>Distance(In 10^25 km)
+              <input type='Number' step="any" placeholder='in 10^25' name='dist'  ></input>
+              
+              </label>
+              
+            </div>
+    
+            <div>
+              <label>Liquid Water (Yes=1,No=0)
+              <input type='Number' placeholder='Yes or No' name='water' ></input>
+              </label>
+             
+            </div>
+    
+            <div>
+              <label>Temprature(cold=0,warm=1,hot=2)
+                 <input type='Number' placeholder='hot,warm,cold' name='temp' ></input>
+              </label>
+             
+            </div>
+            <div>
+              <label>Mass(In Kg)
+              <input type='number' step="any" placeholder='mass of planer' name='mass' ></input>
+    
+              </label>
+            </div>
+            <div>
+              <label>Radius(In Km)
+              <input type='Number' step="any" placeholder='radius of planet' name='radius'  ></input>
+    
+              </label>
+            </div>
+            <button type='submit'>Submit</button>
+          </form>
+          <main>
+            <h4>Example DataSet</h4>
+            <p><blockquote>MARS</blockquote> 152,cold,No,642,10.28896</p>
+          </main>
+        </div>
+
+    
+
+
+</body>
+
+
+</html>
